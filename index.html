@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="pt-br">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="glide.core.min.css">
+    <link rel="stylesheet" href="glide.theme.min.css">
+    <link rel="stylesheet" href="carousel.css">
+    <link rel="stylesheet" href="login.css">
+    
+    <title>Login</title>
+</head>
+<body>
+  <main class="main">
+    <div class="main__container-fluid">
+        <div class="main__login">
+            <h1 class="main__title fonte">Entrar</h1>
+              <div class="main__inputs ">
+                <div class="input" id="inputEmail">
+                  <input type="email" class="input__element" id="email"/>
+                    <span class="material-icons input__icon">Email</span>
+                      <p class="input__message--error">Por favor, insira um email válido</p>
+                </div>
+                <div class="input" id="inputPassword">
+                  <input type="password" class="input__element" id="senha"/>
+                    <span class="material-icons input__icon">Senha</span>
+                      
+                </div>
+                <button type="submit" onclick="logar(); return false " class="main__button" id="button">Entrar</button>
+              </div>
+        </div>
+        <div class="main__illustration"></div>
+    </div>
+    </main>
+       <script>
+        function logar(){
+          var email = document.getElementById('email').value;
+          var senha = document.getElementById('senha').value;
+
+          if(email == "William" && senha == "123456"){
+            alert('Seja Bem-vindo'); 
+            location.href = "home.html";
+          }
+          else{
+            alert('Usuário ou senha incorretos');
+          }
+
+        }
+       </script>
+</body>
+ 
+</html>

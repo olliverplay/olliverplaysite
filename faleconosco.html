@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+    <title>Fale Conosco</title>
+    <style>
+        .card{
+
+margin-left: 29%;
+margin-top: 2%;
+padding: 2%;
+background-color: rgba(0, 0, 255, 0);
+
+}
+@font-face {
+    font-family:'Titulo';
+    src: url(Fontes/Danbury_PERSONAL_USE_ONLY.otf);
+}
+
+body{
+    background-color: rgb(68, 64, 64);
+}
+.h3-2{
+text-align: center;
+margin-top: 12%;
+font-family:'Titulo'; 
+color: rgb(231, 110, 10);
+}
+.h3{
+   font-family:'Titulo'; 
+   color: rgb(231, 110, 10);
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h2 class="h3-2">Qual a Sua Dúvida?</h2>
+
+            
+
+            <div class="col-5 card bg-dark"> 
+                 <h3 class="h3">OlliverPlay</h3>            
+                <form action="https://api.staticforms.xyz/submit" method="post">
+                    
+                    <!-- <input type="text" name="name" placeholder="Digite seu Nome"> -->
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1 bg-light" class="form-label">Digite seu Nome</label>
+                        <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu Nome">
+                    </div>
+
+
+                    <!-- <input type="text" name="email" placeholder="Digite seu email" /> -->
+
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Digite seu Email</label>
+                        <input type="text" name="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu email">
+                      </div>
+
+
+                    <!-- <textarea name="message"></textarea> -->
+
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Escreva seu Comentário</label>
+                        <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+
+
+                    <input type="text" name="honeypot" style="display:none">
+
+                    <input type="hidden" name="accessKey" value="8cf747b8-75be-4c1b-9f3b-47713ea60819">
+
+                    <input type="hidden" name="subject" value="Contact us from - example.com" />
+
+                    <input type="hidden" name="replyTo" value="@">
+
+                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/siteDeFilmes/index%20copy.html#series">
+
+                    <!-- <input type="submit" value="Submit" /> -->
+                    
+                    <button type="submit" value="submit" class="btn btn-primary">Enviar</button>
+
+                </form>
+            </div>
+        </div>
+    </div>   
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family:'Titulo';
+            src: url(Fontes/Danbury_PERSONAL_USE_ONLY.otf);
+        }
+        body{
+            background-color: rgb(0, 0, 0);
+        }
+        .card-header{
+            font-family:'Titulo';
+            background-color: brown;
+        }
+        #Preço{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size:150%;
+        }
+        
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card text-center">
+                    <div class="card-header">
+                      OlliverPlay
+                    </div>
+                    <div class="card-body">
+                      <img src="umamoraalturaSC (6).jpg" alt="" width="50%">
+                      <p class="card-text">As aventuras de João Grilo e Chicó, dois nordestinos pobres que vivem de golpes para sobreviver. Eles estão sempre enganando o povo de um pequeno vilarejo, inclusive o temido cangaceiro Severino de Aracaju, que os persegue pela região.</p>
+                    </div>
+                    <p id="Preço"> R$10,00</p>
+                    <input type="number" id="qt" min="1" max="10">
+
+                    <a href="carrinho.html" class="btn btn-danger" onclick="addfilme6()" id="carrinho">Carrinho</a>
+                    
+                  </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+<script src="carrinho.js"></script>

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="pt-br">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="glide.core.min.css">
+    <link rel="stylesheet" href="glide.theme.min.css">
+    <link rel="stylesheet" href="carousel.css">
+    
+    
+    <title>OlliverPlay</title>
+</head>
+<body onload="logado(); contador()">
+    <div class="container-fluid logo">
+      <h1 id="titulo">OlliverPlay</h1></div>
+    <nav class="navbar navbar-expand-lg bg-dark navbar nav">
+        <div class="container-fluid ">
+          <a class="navbar-brand cor" href="#">OlliverPlay</a>
+          <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent " aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active cor" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link cor" href="#series">Series</a>
+              </li>
+              <li class="nav-item">
+                <p>
+                  <script src="temporizador.js"></script>
+                </p>
+              </li>
+              <script src="temporizador.js"></script>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle cor" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Filmes
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Ação</a></li>
+                  <li><a class="dropdown-item" href="#aventura">Aventura</a></li>
+                  <li><a class="dropdown-item" href="#comedia">Comédia</a></li>
+                  <li><a class="dropdown-item" href="#romance">Romance</a></li>
+                  <li><a class="dropdown-item" href="#terror">Terror</a></li>
+                  
+                  
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link cor" href="#">Carrinho</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link cor" href="faleconosco.html">Fale Conosco</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled"></a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+              <button class="btn btn-danger" type="submit">Pesquisar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div>
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide"><img src="vizinhos (1).jpg" alt=""></li>
+                <li class="glide__slide"><img src="A-Menina-Que-Roubava-Livros.jpg" alt=""></li>
+                <li class="glide__slide"><img src="rambo (1).jpg" alt=""></li>
+                <li class="glide__slide"><img src="osmiseraveis (1).jpg" alt=""></li>
+                <li class="glide__slide"><img src="infiltrado (1).jpg" alt=""></li>
+                <li class="glide__slide"><img src="hobbit (1).jpg" alt=""></li>
+                <li class="glide__slide"><img src="HarryPottereaPedraFilosofal.jpg" alt=""></li>
+                <li class="glide__slide"><img src="guerracivilca (1).jpg" alt=""></li>
+                <li class="glide__slide"><img src="em busca de vingança.jpg" alt=""></li>
+                <li class="glide__slide"><img src="a cinco passos de você.jpg" alt=""></li>
+              </ul>
+              </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><</button>
+              </div>
+            </div>
+          </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        const config = {
+            type: 'carousel',
+            perView: 7,
+            breakpoints: {
+            1024: {
+            perView: 4
+            },
+            800: {
+            perView: 3
+            },
+            600: {
+            perView: 2
+            },
+            380: {
+            perView: 1
+            }
+         },
+         autoplay:2000
+        }
+        new Glide('.glide', config).mount()
+      </script>
+      <div class="container-fluid">
+        <div id="Generos"><h4>Ação</h4></div>
+          <div class="row justify-content-center m-auto gy-2 my-2">
+            <div class="col-sm-6 col-md-4 col-lg-2  efeito">
+              <div class="card">
+                <a href="rambo sinopse.html"><img src="ramboSA (1).jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                  <h5 class="card-title">R$10,00</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-sm-6 col-md-4 col-lg-2 efeito">
+              <div class="card">
+                <a href="Hobbit.html"><img src="ramboSA (2).jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                  <h5 class="card-title">R$10,00</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 efeito">
+              <div class="card">
+                <a href="Guerra Civil sinopse.html"><img src="ramboSA (3).jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                  <h5 class="card-title">R$10,00</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col efeito">
+              <div class="card">
+                <a href="Em busca de Vingança sinopse.html"><img src="ramboSA (4).jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                  <h5 class="card-title">R$10,00</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 efeito">
+              <div class="card">
+                <img src="ramboSA (4).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">R$10,00</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 efeito">
+              <div class="card">
+                <img src="ramboSA (1).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">R$10,00</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div id="Generos"><h4 id="aventura">Aventura</h4></div>
+          <div class="row justify-content-center m-auto gy-2 my-2">
+            <div class="col-sm-6 col-md-4 col-lg-2 efeito">
+              <div class="card">
+                <a href="As aventuras de Crusoé.html"><img src="TombRaiderSA (1).jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                  <h5 class="card-title">R$10,00</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-sm-6 col-md-4 col-lg-2 efeito">
+              <div class="card">
+                <a href="O Mágico de Oz.html"><img src="TombRaiderSA (2).jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                  <h5 class="card-title">R$10,00</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 efeito">
+              <div class="card">
+                <img src="TombRaiderSA (3).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">R$10,00</h5>
+                  <p class="card-text"></p>
+                  <a href="O reino proibido.html" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 efeito">
+              <div class="card">
+                <img src="TombRaiderSA (4).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">R$10,00</h5>
+                  <p class="card-text"></p>
+                  <a href="Homem Aranha.html" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 efeito">
+              <div class="card">
+                <img src="TombRaiderSA (5).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">R$10,00</h5>
+                  <p class="card-text"></p>
+                  <a href="Hobbit.html" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 efeito">
+              <div class="card">
+                <img src="umamoraalturaSC (3).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">R$10,00</h5>
+                  <p class="card-text"></p>
+                  <a href="Tom Raider.html" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="Generos"><h4 id="romance">Romance</h4></div>
+          <div class="row justify-content-center m-auto gy-2 my-2">
+            <div class="col-sm-6 col-md-4 col-lg-2 efeito">
+              <div class="card">
+                <img src="livro-a-culpa-é-das-estrelas-capa-do-filmeSR (1).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">R$10,00</h5>
+                  <p class="card-text"></p>
+                  <a href="A cinco passos de você.html" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-sm-6 col-md-4 col-lg-2 efeito">
+              <div class="card">
+                <img src="livro-a-culpa-é-das-estrelas-capa-do-filmeSR (1).png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">R$10,00</h5>
+                  <p class="card-text"></p>
+                  <a href="A culpa é das estrelas.html" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 efeito">
+              <div class="card">
+                <img src="livro-a-culpa-é-das-estrelas-capa-do-filmeSR (2).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">R$10,00</h5>
+                  <p class="card-text"></p>
+                  <a href="Simplismente Acontece.html" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 efeito">
+              <div class="card">
+                <img src="livro-a-culpa-é-das-estrelas-capa-do-filmeSR (3).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">R$10,00</h5>
+                  <p class="card-text"></p>
+                  <a href="Como eu era antes de você.html" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 efeito">
+              <div class="card">
+                <img src="livro-a-culpa-é-das-estrelas-capa-do-filmeSR (4).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">R$10,00</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 efeito">
+              <div class="card">
+                <img src="livro-a-culpa-é-das-estrelas-capa-do-filmeSR (5).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">R$10,00</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+            </div>
+
+            <div id="Generos"><h4 id="terror">Terror</h4></div>
+          <div class="row justify-content-center m-auto gy-2 my-2">
+            <div class="col-sm-6 col-md-4 col-lg-2 efeito">
+              <div class="card">
+                <img src="a maldição da casa de lagoT (1).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">R$10,00</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-sm-6 col-md-4 col-lg-2 efeito">
+              <div class="card">
+                <img src="a maldição da casa de lagoT (3).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">R$10,00</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 efeito">
+              <div class="card">
+                <img src="a maldição da casa de lagoT (4).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">R$10,00</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 efeito">
+              <div class="card">
+                <img src="a maldição da casa de lagoT (5).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">R$10,00</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 efeito">
+              <div class="card">
+                <img src="a maldição da casa de lagoT (6).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">R$10,00</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 efeito">
+              <div class="card">
+                <img src="a maldição da casa de lagoT (7).JPG" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">R$10,00</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+            </div>
+
+            <div id="Generos"><h4 id="comedia">Comédia</h4></div>
+          <div class="row justify-content-center m-auto gy-2 my-2">
+            <div class="col-sm-6 col-md-4 col-lg-2 efeito">
+              <div class="card">
+                <img src="compadecidaC (1).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">R$10,00</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-sm-6 col-md-4 col-lg-2 efeito">
+              <div class="card">
+                <img src="compadecidaC (2).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">R$10,00</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 efeito">
+              <div class="card">
+                <img src="compadecidaC (3).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">R$10,00</h5>
+                  <p class="card-text"></p>
+                  <a href="DebiEloid.html" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 efeito">
+              <div class="card">
+                <img src="compadecidaC (4).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">R$10,00</h5>
+                  <p class="card-text"></p>
+                  <a href="O amor é cego.html" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 efeito">
+              <div class="card">
+                <img src="compadecidaC (5).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">R$10,00</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 efeito">
+              <div class="card">
+                <img src="compadecidaC (6).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">R$10,00</h5>
+                  <p class="card-text"></p>
+                  <a href="Um amor a altura.html" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+            </div>
+
+            <div id="Generos"><h4 id="series">Séries</h4></div>
+          <div class="row justify-content-center m-auto gy-2 my-2">
+            <div class="col-sm-6 col-md-4 col-lg-2 efeito">
+              <div class="card">
+                <img src="yong sheldonS (1).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">R$10,00</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-sm-6 col-md-4 col-lg-2 efeito">
+              <div class="card">
+                <img src="yong sheldonS (2).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">R$10,00</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 efeito">
+              <div class="card">
+                <img src="yong sheldonS (7).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">R$10,00</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 efeito">
+              <div class="card">
+                <img src="yong sheldonS (4).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">R$10,00</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 efeito">
+              <div class="card">
+                <img src="yong sheldonS (5).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">R$10,00</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 efeito">
+              <div class="card">
+                <img src="yong sheldonS (6).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">R$10,00</h5>
+                  <p class="card-text"></p>
+                  <a href="#" class="btn btn-dark">Comprar</a>
+                </div>
+              </div>
+            </div>
+
+            
+
+      </div>
+</body>
+</html>
